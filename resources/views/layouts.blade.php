@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'scss/style.scss'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/scss/style.scss'])
 </head>
-<body
-{{-- style="background-image: url(https://cbeyondata.com/wp-content/uploads/2020/10/iStock-1237546531-1920x1280.jpg)" --}}
->
+{{-- <body
+style="background-image: url(https://images.wallpapersden.com/image/download/laptop-room-on-the-desk_Z2hnbGyUmZqaraWkpJRnbW1lrWZtZWU.jpg)"
+> --}}
 
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="home">Catalin 2023</a>
+          <a class="navbar-brand" href="home">LOGO</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -47,15 +47,34 @@
 
 
 
-  <footer class="bg-dark text-center text-lg-start" style="bottom: 0%; position:absolute;width:100%">
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: #212529 ;color:white">
-      © 2023 Copyright:
-      <a class="text-white" href="#">Cretu Catalin</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
 
+<div class="container" style="width:1400px">
+    @yield('content')
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="height:490px">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW58ZW58MHx8MHx8&w=1000&q=80" class="d-block w-100" alt="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW58ZW58MHx8MHx8&w=1000&q=80" class="d-block w-100" alt="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW58ZW58MHx8MHx8&w=1000&q=80" class="d-block w-100" alt="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW58ZW58MHx8MHx8&w=1000&q=80">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW58ZW58MHx8MHx8&w=1000&q=80" class="d-block w-100" alt="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW58ZW58MHx8MHx8&w=1000&q=80" class="d-block w-100" alt="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW58ZW58MHx8MHx8&w=1000&q=80" class="d-block w-100" alt="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW58ZW58MHx8MHx8&w=1000&q=80">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW58ZW58MHx8MHx8&w=1000&q=80" class="d-block w-100" alt="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW58ZW58MHx8MHx8&w=1000&q=80" class="d-block w-100" alt="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW58ZW58MHx8MHx8&w=1000&q=80" class="d-block w-100" alt="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW58ZW58MHx8MHx8&w=1000&q=80">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+</div>
 
 
 
@@ -69,4 +88,4 @@
 
 </body>
 </html>
-@yield('content')
+

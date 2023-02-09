@@ -6,3 +6,4 @@
 @section('slider')
 
 @endsection
+@extends('footer')
