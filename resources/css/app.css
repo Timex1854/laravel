@@ -6,10 +6,15 @@ body {
     display: flex;
   }
   .card {
-    margin-bottom: 20px;
+    position: relative;
+    margin: 30px;
+    bottom: 50px;
   }
   .card-img-top {
     width: 200px;
     height: 200px;
     align-self: center;
   }
+
+
+

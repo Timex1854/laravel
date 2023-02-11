@@ -48,7 +48,7 @@ style="background-image: url(https://images.wallpapersden.com/image/download/lap
 
 
 
-<div class="container" style="width:1400px">
+<div class="container" >
     @yield('content')
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" style="height:490px">
